@@ -18,7 +18,7 @@
   
   
   
-  * If you dont have Microsoft Visual C++ 14.0 , You can download from here: http://go.microsoft.com/fwlink/?LinkId=691126&fixForIE=.exe.
+  * If you dont have Microsoft Visual C++ 14.0 , You can download from here: http://go.microsoft.com/fwlink/?LinkId=691126&fixForIE=.exe. (Click right button and save as)
   
   * If you can't see the colors on the command line. Open Powershell as administrator and run the following line of code.
   
