@@ -40,7 +40,7 @@
 
 ### :label: Note :
 
-  * It is for educational purposes only and is inefficient.
+  * Enjoy :)
 
 ---
 
