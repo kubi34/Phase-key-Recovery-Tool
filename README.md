@@ -1,4 +1,3 @@
-# Metamask-Phase-Key-Multiprocess-Brute-Force
 # MetaMask Brute-Force
 
 <div id="header" align="center">
