@@ -17,8 +17,12 @@ ETHAPI = 'https://etherscan.io/register Sign up and get API Key and Paste here'
 BSCAPI = 'https://bscscan.com/register Sign up and get API Key and Paste here'
 
 
-
-logging.basicConfig(filename='ErrorDump.log', format= '%(asctime)s %(message)s', encoding='utf-8', level=logging.WARNING)
+# Fixed Logs.
+logging.basicConfig(handlers=[logging.FileHandler(filename="ErrorDump.log", 
+                                                  encoding='utf-8', mode='a+')],
+                                                  format="%(asctime)s %(name)s:%(levelname)s:%(message)s", 
+                                                  datefmt="%F %A %T", 
+                                                  level=logging.WARNING)
 
 
 def subforce1():
