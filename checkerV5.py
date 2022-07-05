@@ -10,6 +10,9 @@ import json
 from termcolor import colored, cprint
 import logging, coloredlogs
 from multiprocessing import Process
+from multiprocessing import Pool
+import multiprocessing
+import time
 # import time
 # import os
 
@@ -94,20 +97,26 @@ def subforce1():
         bip44_hdwallet.clean_derivation()
 
 def mainforce():
+    print("Number of cpu : ", multiprocessing.cpu_count())
+    # input a number
+    while True:
+      try:
+        num = int(input("Enter the number of multiprocesses that will perform the operation: "))
+        break
+      except ValueError:
+          print("Please input integer only...")  
+          continue
+          
+
+    print("num:", num)
     print("Starting multiprocessing")
-    p1 = Process(target=subforce1)
-    p2 = Process(target=subforce1)
-    p3 = Process(target=subforce1)
-    p4 = Process(target=subforce1)
-
-
-    p1.start()
-    p2.start()
-    p3.start()
-    p4.start()
-
+    
+    for w in range(num):
+        p = Process(target=subforce1)
+        p.start()
+        time.sleep(2)
     
     print("Multiprocess started")
-    
+        
 if __name__ == '__main__' :
     mainforce() 
