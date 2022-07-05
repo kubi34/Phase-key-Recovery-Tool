@@ -28,7 +28,7 @@ logging.basicConfig(handlers=[logging.FileHandler(filename="ErrorDump.log",
                                                   level=logging.WARNING)
 
 
-def subforce1():
+def subforce():
 
     while True:    
         MNEMONIC: str = generate_mnemonic(language="english", strength=128)
@@ -112,7 +112,7 @@ def mainforce():
     print("Starting multiprocessing")
     
     for w in range(num):
-        p = Process(target=subforce1)
+        p = Process(target=subforce)
         p.start()
         time.sleep(2)
     
