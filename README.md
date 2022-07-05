@@ -29,7 +29,7 @@
 
 ### :gear: Usage :
   * Get api from bscscan and etherscan. 
-  * Enter the apis in the 'key' section in checkerV5.py
+  * Enter the apis in the APIKeys.txt ETHAPI:BSCAPI
   * run checkerV5.py
   * Accounts with a balance will be displayed in valid.txt.
   * ETHAPI = 'https://etherscan.io/register Sign up and get API KEY
