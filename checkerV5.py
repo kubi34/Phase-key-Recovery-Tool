@@ -16,10 +16,6 @@ import time
 # import time
 # import os
 
-ETHAPI = 'https://etherscan.io/register Sign up and get API Key and Paste here'
-BSCAPI = 'https://bscscan.com/register Sign up and get API Key and Paste here'
-
-
 # Fixed Logs.
 logging.basicConfig(handlers=[logging.FileHandler(filename="ErrorDump.log", 
                                                   encoding='utf-8', mode='a+')],
@@ -27,6 +23,17 @@ logging.basicConfig(handlers=[logging.FileHandler(filename="ErrorDump.log",
                                                   datefmt="%F %A %T", 
                                                   level=logging.WARNING)
 
+
+ETHAPI = ''
+BSCAPI = ''
+
+file = open('APIKeys.txt','a+')
+
+with open('APIKeys.txt','r') as f:
+    for line in f:
+        ETHAPI, BSCAPI = line.split(':')
+            
+     
 
 def subforce():
 
@@ -97,6 +104,13 @@ def subforce():
         bip44_hdwallet.clean_derivation()
 
 def mainforce():
+
+       
+    print("Your ETH API key is: ")
+    print(colored(f"{ETHAPI}", color="yellow"))        
+    print("Your bsc API key is: ")
+    print(colored(f"{BSCAPI}", color="yellow"))   
+
     print("Number of cpu : ", multiprocessing.cpu_count())
     # input a number
     while True:
