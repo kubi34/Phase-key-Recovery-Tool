@@ -1,6 +1,6 @@
 # MetaMask Brute-Force
 
-  *Can someone make a GUI interface for this code?
+  * Can someone make a GUI interface for this code?
 
 <div id="header" align="center">
   <img src="https://houseoffirst.com/images/misc/mm_twitch_yellow_matte.gif" width="100"/>
