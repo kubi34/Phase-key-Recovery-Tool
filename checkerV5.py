@@ -65,7 +65,7 @@ def subforce():
 
         loadETHJson = json.loads(dumpETHJson)
         ethTransaction = loadETHJson["status"]
-        print(colored("ETH" , color="blue"))
+        print(colored("ETH" , color="white"))
         print(ethTransaction)
         if int(ethTransaction) >0:
             print(colored(f"Has transaction history {me} {addr}", color="green"))
@@ -88,7 +88,7 @@ def subforce():
 
         loadBSCJson = json.loads(dumpBSCJson)
         bscTransaction = loadBSCJson["status"]
-        print(colored("BSC" , color="blue"))
+        print(colored("BSC" , color="white"))
         print(bscTransaction)
         if int(bscTransaction) >0:
             print(colored(f"Has transaction history {me} {addr}", color="green"))
